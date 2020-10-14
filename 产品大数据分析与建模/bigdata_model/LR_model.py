@@ -10,6 +10,9 @@ import pandas as pd
 
 # 数据处理
 data = pd.read_csv('data/Advertising.csv')
+
+print(data.head(5)) #查看前2条数据
+
 X = data[['TV', 'radio', 'newspaper']]
 y = data[['sales']]
 
